@@ -58,6 +58,21 @@ main {
     line-height: 1.5;
 }
 
+.curriculum {
+    display: block;
+    padding: 10px;
+    border: 1px solid #fff;
+    justify-self: center;
+    border-radius: 20px;
+    margin: 20px 0px;
+    transition: all 0.3s;
+}
+
+.curriculum:hover {
+    background-color: white;
+    color: #390000;
+}
+
 .pubblicazioni-web {
     display: flex;
     justify-content: space-around;
