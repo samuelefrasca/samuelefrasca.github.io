@@ -19,7 +19,7 @@ a {
     margin: 0 auto;
 }
 
-img {
+.logo {
     height: 170px;
 }
 
@@ -28,16 +28,21 @@ header {
     border-radius: 0px 0px 20px 20px;
 }
 
-main {
-    flex-grow: 1;
-    padding: 10px 40px;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.header3 {
+    width: 170px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 10px 40px;
+}
+
 
 .title {
     text-align: center;
@@ -138,6 +143,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header3 {
+        display: none;
+    }
+
     main {
         padding: 10px 10px;
     }
@@ -146,17 +160,13 @@ footer {
         flex-wrap: wrap;
     }
 
-    .header {
-        justify-content: center;
-    }
-
     .title {
         font-size: 26pt;
+        margin-top: 0;
     }
 
-    .logo1,
-    .logo2 {
-        display: none
+    .webcard {
+        margin-bottom: 20px;
     }
 
     .pubblicazioni-web {
