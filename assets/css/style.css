@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #390000;
+    background-color: #2d0000;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -24,7 +28,7 @@ a {
 }
 
 header {
-    background-color: #800000;
+    background-color: #8b0000;
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -49,6 +53,13 @@ main {
     font-size: 34pt;
 }
 
+.role {
+    margin-top: -10px;
+    opacity: .8;
+    font-size: 18px;
+    text-align: center;
+}
+
 .subtitle {
     text-align: center;
 }
@@ -59,7 +70,7 @@ main {
     padding: 30px;
     border-radius: 10px;
     display: flex;
-    gap: 50px;
+    gap: 20px;
     line-height: 1.5;
 }
 
@@ -70,7 +81,7 @@ main {
     justify-self: center;
     border-radius: 20px;
     margin: 20px 0px;
-    transition: all 0.3s;
+    transition: .3s;
 }
 
 .curriculum:hover {
@@ -86,14 +97,15 @@ main {
 }
 
 .webcard {
-    background-color: #640000;
+    background-color: #4a0000;
     padding: 30px 20px;
     border-radius: 20px;
     width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .18);
+    transition: 0.3s ease;
 }
 
 .webcard a {
@@ -110,15 +122,20 @@ main {
 }
 
 .webcard:hover {
-    background-color: #7a0000;
+    background-color: #600000;
     transform: translateY(-8px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .45);
 }
 
 footer {
-    background-color: #800000;
+    background-color: #8b0000;
     padding: 20px 0px;
     border-radius: 20px 20px 0px 0px;
+}
+
+.subtitle-footer {
+    text-align: center;
+    font-size: 18px;
 }
 
 .contatti {
@@ -135,7 +152,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: color 0.3s ease;
+    transition: color .3s ease;
 }
 
 .contatto-item:hover {
