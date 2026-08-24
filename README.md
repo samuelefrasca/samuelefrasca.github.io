@@ -1,5 +1,7 @@
-# Il mio sito
+# Samuele Frasca — Sito personale
 
-Benvenuto nella mia repository GitHub Pages.
+Repository del mio sito personale e portfolio, dove raccolgo informazioni su di me, i miei progetti e i miei contatti.
 
-[Visita il sito](https://samuelefrasca.github.io)
+🌐 [Visita il sito](https://samuelefrasca.github.io)
+
+Realizzato con HTML, CSS e JavaScript.
