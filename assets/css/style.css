@@ -1,10 +1,19 @@
+:root {
+    --bg-main: #2d0000;
+    --bg-accent: #8b0000;
+    --bg-card: #4a0000;
+    --bg-card-hover: #600000;
+    --text-light: #ffffff;
+    --text-hover: #ffb3b3;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #2d0000;
-    color: #fff;
+    background-color: var(--bg-main);
+    color: var(--text-light);
     font-family: "Inter", sans-serif;
     margin: 0;
     display: flex;
@@ -13,9 +22,8 @@ body {
 }
 
 a {
-    color: #fff;
+    color: var(--text-light);
     text-decoration: none;
-    ;
 }
 
 .container {
@@ -28,7 +36,7 @@ a {
 }
 
 header {
-    background-color: #8b0000;
+    background-color: var(--bg-accent);
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -50,7 +58,7 @@ main {
 
 .title {
     text-align: center;
-    font-size: 34pt;
+    font-size: 45px;
 }
 
 .role {
@@ -66,7 +74,7 @@ main {
 
 .presentation {
     background-color: rgba(0, 0, 0, 0.25);
-    color: white;
+    color: var(--text-light);
     padding: 30px;
     border-radius: 10px;
     display: flex;
@@ -74,36 +82,38 @@ main {
     line-height: 1.5;
 }
 
+.presentation p {
+    flex: 1;
+    margin: 0;
+}
+
 .curriculum {
     display: block;
-    padding: 10px;
-    border: 1px solid #fff;
-    justify-self: center;
+    width: fit-content;
+    padding: 10px 15px;
+    border: 1px solid var(--text-light);
     border-radius: 20px;
-    margin: 20px 0px;
+    margin: 20px auto;
     transition: .3s;
 }
 
 .curriculum:hover {
-    background-color: white;
-    color: #390000;
+    background-color: var(--text-light);
+    color: var(--bg-main);
 }
 
 .pubblicazioni-web {
     display: flex;
     justify-content: space-around;
     margin: 20px 0px;
+    gap: 20px;
     text-align: center;
 }
 
 .webcard {
-    background-color: #4a0000;
-    padding: 30px 20px;
+    background-color: var(--bg-card);
     border-radius: 20px;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 260px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, .18);
     transition: 0.3s ease;
 }
@@ -113,7 +123,10 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    padding: 30px 20px;
     font-weight: bold;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .webcard img {
@@ -122,13 +135,13 @@ main {
 }
 
 .webcard:hover {
-    background-color: #600000;
+    background-color: var(--bg-card-hover);
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, .45);
 }
 
 footer {
-    background-color: #8b0000;
+    background-color: var(--bg-accent);
     padding: 20px 0px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -146,7 +159,7 @@ footer {
 }
 
 .contatto-item {
-    color: white;
+    color: var(--text-light);
     text-decoration: none;
     font-size: 16px;
     display: flex;
@@ -156,11 +169,10 @@ footer {
 }
 
 .contatto-item:hover {
-    color: #ffb3b3;
+    color: var(--text-hover);
 }
 
 @media (max-width: 768px) {
-
     .header {
         flex-direction: column;
     }
@@ -170,29 +182,25 @@ footer {
     }
 
     main {
-        padding: 10px 10px;
+        padding: 10px 15px;
     }
 
     .presentation {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .title {
-        font-size: 26pt;
+        font-size: 34px;
         margin-top: 0;
-    }
-
-    .webcard {
-        margin-bottom: 20px;
     }
 
     .pubblicazioni-web {
         flex-wrap: wrap;
-        margin-top: 0;
-        margin-bottom: 0;
+        gap: 20px;
     }
 
-    .iudpi {
-        margin-bottom: 20px;
+    .contatti {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
