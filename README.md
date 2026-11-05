@@ -4,4 +4,4 @@ Repository del mio sito personale e portfolio, dove raccolgo informazioni su di 
 
 🌐 [Visita il sito](https://samuelefrasca.github.io)
 
-Realizzato con HTML, CSS e JavaScript.
+Realizzato con HTML e CSS.
